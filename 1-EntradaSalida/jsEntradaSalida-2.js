@@ -2,6 +2,8 @@
 y luego mostrarlo por 'alert' al presionar el botón  'MOSTRAR'*/
 function Mostar()
 {
-	
+    var dato;
+    a=prompt();
+    alert("Lo ingresado fue: "+dato);
 }
 
