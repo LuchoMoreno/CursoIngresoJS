@@ -16,5 +16,5 @@ function SacarResto()
     resultado1 = (dividendo/divisor);
     resultado2 = (resultado1*divisor);
     resto = (dividendo-resultado2);
-    alert("El resto termina siendo :" +resto);
+    alert ("El resto termina siendo :" +resto);
 }
