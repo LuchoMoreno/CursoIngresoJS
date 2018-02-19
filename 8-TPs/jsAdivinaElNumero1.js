@@ -15,10 +15,11 @@ var numeroSecreto
 var numero 
 var falta 
 var pasa
-var contadorIntentos= 0
+var contadorIntentos
 
 function comenzar()
 {
+  contadorIntentos = 0;
 	numeroSecreto= Math.floor((Math.random()*(101-1))+1);
   console.log(numeroSecreto);
 }
@@ -47,4 +48,5 @@ function verificar()
     alert("Te falta "+falta);
     document.getElementById("intentos").value = contadorIntentos;
   }
+  
 }
