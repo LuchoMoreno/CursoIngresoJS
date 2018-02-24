@@ -23,7 +23,7 @@ function Mostrar()
     {
         alert("Es un numero primo.")
     }
-    else if (contador>2)
+    else (contador>2)
     {
         alert("El numero NO es primo")
     }
