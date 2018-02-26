@@ -19,6 +19,7 @@ function ComenzarIngreso ()
     var legajo;
     var nacionalidad;
 
+/*Validacion de Edades*/
 edad = prompt("Ingrese su edad");
 edad = parseInt(edad);
     while(isNaN(edad) || edad<18 || edad>90)
@@ -28,6 +29,8 @@ edad = parseInt(edad);
     }
 document.getElementById("Edad").value=edad;
 
+
+/*Validacion de Sexo*/
 sexo = prompt("Ingrese su sexo");
     while(sexo!="m" && sexo!="f")
     {
@@ -45,6 +48,8 @@ document.getElementById("Sexo").value=sexo;
         document.getElementById("Sexo").value=sexo
     }
 
+
+/*Validacion de Estado Civil*/
 civil = prompt("Ingrese su estado civil: 1-(Soltero), 2-(Casado), 3-(Divorciado) 4(viudo).")
     while(civil!="1" && civil!="2"&& civil!="3" && civil!="4")
     {
@@ -71,6 +76,8 @@ civil = prompt("Ingrese su estado civil: 1-(Soltero), 2-(Casado), 3-(Divorciado)
         document.getElementById("EstadoCivil").value=civil
      }
 
+
+/*Validacion de Sueldo*/
 sueldo = prompt("Ingrese su sueldo bruto")
     while(isNaN(sueldo) || sueldo<8000)
     {
@@ -85,6 +92,8 @@ legajo = prompt("Ingrese su numero de legajo (Sin 0 a la izquierda.)")
     }
 document.getElementById("Legajo").value=legajo;
 
+
+/*Valicacion de Nacionalidad*/
 nacionalidad = prompt("Ingrese su nacionalidad. A-(Argentino), E-(Extranjero, N-(Nacionalizado)")
     while(nacionalidad!="A" && nacionalidad!="E" && nacionalidad!="N")
     {
