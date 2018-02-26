@@ -32,7 +32,7 @@ function ComenzarIngreso ()
     var sueldoMaxNacionalizados=1
 
 
-for(var i=1;i<=2;i++)
+for(var i=1;i<=7;i++)
 {
 
 /*Validacion de Edades*/
@@ -112,31 +112,36 @@ document.getElementById("Legajo").value=legajo;
 
 /*Valicacion de Nacionalidad*/
 nacionalidad = prompt("Ingrese su nacionalidad. A-(Argentino), E-(Extranjero, N-(Nacionalizado)")
-    while(nacionalidad!="A" && nacionalidad!="E" && nacionalidad!="N")
+    while(nacionalidad!="a" && nacionalidad!="e" && nacionalidad!="n")
     {
         nacionalidad = prompt("Ingrese su nacionalidad A-(Argentino), E-(Extranjero, N-(Nacionalizado)")
     }
-    if (nacionalidad=="A")
+    if (nacionalidad=="a")
     {
         nacionalidad="Argentino"
         document.getElementById("Nacionalidad").value=nacionalidad;
     }
-    else if (nacionalidad=="E")
+    else if (nacionalidad=="e")
     {
         nacionalidad="Extranjero"
         document.getElementById("Nacionalidad").value=nacionalidad;
     }
-    else if (nacionalidad=="N")
+    else if (nacionalidad=="n")
     {
         nacionalidad="Nacionalizado"
         document.getElementById("Nacionalidad").value=nacionalidad;
     }
 
+    //Calculo el sueldoMaxNacionalizados.
     if (nacionalidad=="Nacionalizado" && sueldo>sueldoMaxNacionalizados)
     {
-    sueldoMaxNacionalizados=sueldo
+        sueldoMaxNacionalizados=sueldo
+        console.log(sueldoMaxNacionalizados)
     }
     
 } /*finalizacion de FOR*/
+
 alert(+sueldoMaxNacionalizados)
+
+
 } /*FIN DE LA FUNCION*/
