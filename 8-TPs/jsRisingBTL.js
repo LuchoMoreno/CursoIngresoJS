@@ -85,5 +85,31 @@ legajo = prompt("Ingrese su numero de legajo (Sin 0 a la izquierda.)")
     }
 document.getElementById("Legajo").value=legajo;
 
+nacionalidad = prompt("Ingrese su nacionalidad. A-(Argentino), E-(Extranjero, N-(Nacionalizado)")
+    while(nacionalidad!="A" && nacionalidad!="E" && nacionalidad!="N")
+    {
+        nacionalidad = prompt("Ingrese su nacionalidad A-(Argentino), E-(Extranjero, N-(Nacionalizado)")
+    }
+    if (nacionalidad=="A")
+    {
+        nacionalidad="Argentino"
+        document.getElementById("Nacionalidad").value=nacionalidad;
+    }
+    else if (nacionalidad=="E")
+    {
+        nacionalidad="Extranjero"
+        document.getElementById("Nacionalidad").value=nacionalidad;
+    }
+    else if (nacionalidad=="N")
+    {
+        nacionalidad="Nacionalizado"
+        document.getElementById("Nacionalidad").value=nacionalidad;
+    }
+
+
+
+
+
+
 
 }
