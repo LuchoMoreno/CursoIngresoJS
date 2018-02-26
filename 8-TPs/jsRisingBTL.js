@@ -8,16 +8,32 @@ C.	Estado civil, 1-para soltero, 2-para casados, 3-para divorciados y 4-para viu
 D.	Sueldo bruto, no menor a 8000.
 E.	Número de legajo, numérico de 4 cifras, sin ceros a la izquierda.
 F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para nacionalizados.
+ 
+ 
+ 1) Sueldo max de los nacionaliados.
+ 2) Sueldo max de sexo F y Argentinas.
+ 3) Sueldo promedio de M F y Ambos (bruto/neto -25%).
+ 4) Cantidad de personas M con sueldo > a 12000.
+ 5) Edad de la persona F con sueldo maximo.
+ 6) Legajo de Argentino con menor sueldo.
+ 7) Cantidad de personas con sueldo neto> sueldo promedio.
+ 8) Cantidad de personas con S.Brutno > sueldo promedio
+ 
  */
 function ComenzarIngreso () 
 
 {
     var edad;
-    var sexo; 
+    var sexo;
     var civil;
     var sueldo;
     var legajo;
     var nacionalidad;
+    var sueldoMaxNacionalizados=1
+
+
+for(var i=1;i<=2;i++)
+{
 
 /*Validacion de Edades*/
 edad = prompt("Ingrese su edad");
@@ -116,10 +132,11 @@ nacionalidad = prompt("Ingrese su nacionalidad. A-(Argentino), E-(Extranjero, N-
         document.getElementById("Nacionalidad").value=nacionalidad;
     }
 
-
-
-
-
-
-
-}
+    if (nacionalidad=="Nacionalizado" && sueldo>sueldoMaxNacionalizados)
+    {
+    sueldoMaxNacionalizados=sueldo
+    }
+    
+} /*finalizacion de FOR*/
+alert(+sueldoMaxNacionalizados)
+} /*FIN DE LA FUNCION*/
