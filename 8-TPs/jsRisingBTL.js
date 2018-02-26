@@ -85,8 +85,9 @@ sueldo = prompt("Ingrese su sueldo bruto")
     }
 document.getElementById("Sueldo").value=sueldo;
 
+/*Validacion de Legajo*/
 legajo = prompt("Ingrese su numero de legajo (Sin 0 a la izquierda.)")
-    while(isNaN(legajo))
+    while(isNaN(legajo) || legajo>9999 || legajo<1000)
     {
         legajo = prompt("Ingrese su numero de legajo, ha ingresado un valor incorreto.)")
     }
