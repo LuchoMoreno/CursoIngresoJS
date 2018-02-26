@@ -10,6 +10,7 @@ E.	Número de legajo, numérico de 4 cifras, sin ceros a la izquierda.
 F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para nacionalizados.
  */
 function ComenzarIngreso () 
+
 {
     var edad;
     var sexo; 
@@ -28,7 +29,7 @@ edad = parseInt(edad);
 document.getElementById("Edad").value=edad;
 
 sexo = prompt("Ingrese su sexo");
-    while(sexo!="m" && sexo!="f" )
+    while(sexo!="m" && sexo!="f")
     {
     sexo = prompt("Ingrese su sexo correctamente");
     }
@@ -70,13 +71,19 @@ civil = prompt("Ingrese su estado civil: 1-(Soltero), 2-(Casado), 3-(Divorciado)
         document.getElementById("EstadoCivil").value=civil
      }
 
+sueldo = prompt("Ingrese su sueldo bruto")
+    while(isNaN(sueldo) || sueldo<8000)
+    {
+        sueldo = prompt("Ingrese su sueldo bruto.Recuerde que debe ser minimo 8000")
+    }
+document.getElementById("Sueldo").value=sueldo;
 
-
-
-
-
-
-
+legajo = prompt("Ingrese su numero de legajo (Sin 0 a la izquierda.)")
+    while(isNaN(legajo))
+    {
+        legajo = prompt("Ingrese su numero de legajo, ha ingresado un valor incorreto.)")
+    }
+document.getElementById("Legajo").value=legajo;
 
 
 }
