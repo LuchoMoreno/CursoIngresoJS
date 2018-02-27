@@ -29,7 +29,8 @@ function ComenzarIngreso ()
     var sueldo;
     var legajo;
     var nacionalidad;
-    var sueldoMaxNacionalizados=1
+    var sueldoMaxNacionalizados=0
+    var sueldoMaxFemeninoArgentina=0
 
 
 for(var i=1;i<=7;i++)
@@ -139,6 +140,10 @@ nacionalidad = prompt("Ingrese su nacionalidad. A-(Argentino), E-(Extranjero, N-
         console.log(sueldoMaxNacionalizados)
     }
     
+    // Sueldo maximo Femenino Argentinas
+    if (sexo=="Femenino" || nacionalidad=="Argentino")
+
+
 } /*finalizacion de FOR*/
 
 alert(+sueldoMaxNacionalizados)

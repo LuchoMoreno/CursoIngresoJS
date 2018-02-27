@@ -12,7 +12,7 @@ function Mostrar()
 		acumulador=acumulador+numero;
 
 	}
-	resultado=acumulador/contador
+resultado=acumulador/contador
 
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=resultado;
