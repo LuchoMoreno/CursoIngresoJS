@@ -9,7 +9,7 @@ function Mostrar()
 	while(contador<7)
 	{
 		contador++;
-		importe=prompt("ingrese un numero");
+		importe=prompt("Ingrese un numero");
 		importe=parseInt(importe)
 		if(importe<0)
 		{
