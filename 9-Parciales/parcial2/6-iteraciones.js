@@ -9,12 +9,12 @@ function Mostrar()
 	while(contador<7)
 	{
 		contador++;
-		importe=prompt("Ingrese un numero");
+		importe=prompt("ingrese un numero");
 		importe=parseInt(importe)
 		if(importe<0)
 		{
 			contador++
-			importe=prompt("Error ingrese un numero mayor que cero")
+			importe=prompt("error ingrese un numero mayor que cero")
 			importe=parseInt(importe)
 		}
 		
@@ -24,7 +24,6 @@ function Mostrar()
 			max=importe
 			min=importe
 		}
-		
 		else
 		{
 			if(importe>max)
@@ -37,8 +36,7 @@ function Mostrar()
 			}
 		}
 	}
-
-	alert("El mayor vendido fue: "+(max)+" y el menor vendido fue: "+(min))
+	alert("el mayor vendido fue"+(max)+"y el menor vendido es"+(min))
 	
 
-}
+} 
