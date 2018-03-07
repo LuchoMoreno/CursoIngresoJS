@@ -1,42 +1,44 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
 {
-	var importe
-	var contador=0;
-	var max
-	var min
-	var primera=true
-	while(contador<7)
+	var ventas;
+	var max;
+	var min;
+	var primera = true;
+
+	for(i=0; i<7; i++)
 	{
-		contador++;
-		importe=prompt("ingrese un numero");
-		importe=parseInt(importe)
-		if(importe<0)
+		ventas = prompt("Ingrese el numero de ventas.")
+		ventas = parseInt(ventas)
+		
+		while(ventas<0)
 		{
-			contador++
-			importe=prompt("error ingrese un numero mayor que cero")
-			importe=parseInt(importe)
+			ventas = prompt("Ingrese correctamente el numero de ventas. Mayor a 0")
+			ventas = parseInt(ventas)
+		}
+
+		if (primera)
+		{
+			primera = false
+			max = ventas
+			min = ventas
 		}
 		
-			if(primera)
-		{
-			primera=false
-			max=importe
-			min=importe
-		}
 		else
 		{
-			if(importe>max)
+			if (ventas > max)
 			{
-				max=importe
+				max = ventas
 			}
-			else if(importe<min)
+
+			else (ventas < min)
 			{
-				min=importe
+				min = ventas
 			}
 		}
-	}
-	alert("el mayor vendido fue"+(max)+"y el menor vendido es"+(min))
 	
+	}
+	
+	alert("El minimo de ventas es: "+min + " y el maximo de ventas es: "+max)
 
 } 

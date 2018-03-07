@@ -20,11 +20,13 @@ if (numero1 == numero2)
 }  
 
 else if (numero1 > numero2)
-    resta = (numero1-numero2)
+{    
+resta = (numero1-numero2)
     alert(+resta);
-
-else if (numero 1< numero2)
+}
+else if (numero1 < numero2)
+{ 
     suma = (numero1+numero2)
     alert(+suma);
-
+}
 }
