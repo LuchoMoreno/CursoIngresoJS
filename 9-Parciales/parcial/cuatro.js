@@ -17,6 +17,12 @@ if (numero1 == numero2)
 {
     multiplicacion = (numero1*numero2)
     alert(+multiplicacion);
+
+    if (multplicacion > 10)
+    {
+        alert("Supero los 10")
+    }
+
 }  
 
 else if (numero1 > numero2)
@@ -30,3 +36,5 @@ else if (numero1 < numero2)
     alert(+suma);
 }
 }
+
+
